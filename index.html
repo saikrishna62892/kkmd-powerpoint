@@ -98,8 +98,8 @@
                 </div>
                 <div class="form-group col-md-6">
                     <label for="battery-type">Battery Type</label>
-                    <input type="text" name="entry.1130990576" class="form-control" id="serial-no"
-                        placeholder="Enter your Battery Type">
+                    <input type="text" name="entry.1130990576" class="form-control" id="battery-type"
+                        placeholder="Enter Your Battery Type">
                 </div>
             </div>
             <div class="form-row">
@@ -122,7 +122,7 @@
                 </div>
                 <div class="form-group col-md-4">
                     <label for="vehicle-type">Vehicle Type</label>
-                    <input type="text" name="entry.1814951198" class="form-control" id="serial-no"
+                    <input type="text" name="entry.1814951198" class="form-control" id="vehicle-type"
                         placeholder="Enter Your Vehicle Type">
                 </div>
                 <div class="form-group col-md-4">
@@ -202,11 +202,11 @@
     <script>
         function postToGoogle() {
             var field1 = $("#serial-no").val();
-            var field2 = $("#battery-type option:selected").text();
+            var field2 = $("#battery-type").val();
             var field3 = $("#customer-name").val();
             var field4 = $("#mobile-number").val();
             var field5 = $("#vehicle-number").val();
-            var field6 = $("#vehicle-type option:selected").text();
+            var field6 = $("#vehicle-type").val();
             var field7 = $("#date-of-sale").val();
             var date = new Date(field7);
             var year = date.getFullYear();
