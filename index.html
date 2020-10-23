@@ -134,21 +134,6 @@
             <center><button type="submit" class="site-btn register-btn" onclick="alert(" Your Request Submitted
                     Successfully :)");">SUBMIT</button></center>
         </form>
-        <h3 id="success-msg" style="text-align: center !important; display:none; color:#232565">--Your Request has been
-            posted to Google Spreadsheet--</h3><br><br>
-        <div id="success-msg-p" style="text-align: center !important; display:none; color:#232565" class="form-row">
-            <div class="form-group col-md-4" style="margin-bottom : 2em;">
-                <a class="site-btn register-btn" href='./index.html'>Return to Home</a>&emsp;&emsp;
-            </div>
-            <div class="form-group col-md-4" style="margin-bottom : 2em;"> 
-                <a class="site-btn register-btn" href='search.html'>Search</a>&emsp;&emsp;
-            </div>
-            <div class="form-group col-md-4" style="margin-bottom : 2em;">
-                <a class="site-btn register-btn" target="_blank"
-                    href='https://docs.google.com/spreadsheets/d/1bhBvyhMxIxzL7SmuftvxIEiq-MMUwqorpp2OFpgb7CA/edit?usp=sharing'>View
-                    Spreadsheet</a>
-            </div>
-        </div>
     </div>
     <!-- Register Form Section End -->
 
@@ -232,10 +217,6 @@
                 },
                 error: function (x, y, z) {
                     alert('Your Request has been posted to Google Spreadsheet');
-                    $('#success-msg').show();
-                    $('#success-msg-p').show();
-                    $('#form').hide();
-
                 }
             });
             return false;
