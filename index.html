@@ -183,7 +183,7 @@
     <script src="js/jquery.slicknav.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>             
     <script>
         function postToGoogle() {
             var field1 = $("#serial-no").val();
@@ -217,6 +217,7 @@
                 },
                 error: function (x, y, z) {
                     alert('Your Request has been posted to Google Spreadsheet');
+                    location.reload(true);
                 }
             });
             return false;
